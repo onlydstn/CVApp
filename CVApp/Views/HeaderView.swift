@@ -14,14 +14,13 @@ struct HeaderView: View {
     
     var body: some View {
         ZStack {
-            Color(red: 0.95, green: 0.95, blue: 0.95)
+            Color(red: 0.90, green: 0.90, blue: 0.90)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .fill(Color(red: 0.3, green: 0.56, blue: 0.8))
+                    .fill(Color(red: 0.3, green: 0.55, blue: 0.8))
                     .frame(height: 135)
                     .edgesIgnoringSafeArea(.top)
-                
                 Spacer()
             }
             VStack {
@@ -45,18 +44,30 @@ struct HeaderView: View {
                 }
                 //.background(.red)
                 .padding(1)
-                HStack(spacing: 130) {
-                    Text(infos.address)
+                HStack(spacing: 100) {
+                    Text(Image(systemName: "house"))
                         .font(.footnote)
-                    Text(infos.phoneNumber)
+                    +
+                    Text(" \(infos.address)")
+                        .font(.footnote)
+                    Text(Image(systemName: "calendar"))
+                        .font(.footnote)
+                    +
+                    Text(" \(infos.birthDate)")
                         .font(.footnote)
                 }
                 //.background(.yellow)
                 .padding(5)
-                HStack(spacing: 70) {
-                    Text(infos.email)
+                HStack(spacing: 85) {
+                    Text(Image(systemName: "mail"))
                         .font(.footnote)
-                    Text(infos.birthDate)
+                    +
+                    Text(" \(infos.email)")
+                        .font(.footnote)
+                    Text(Image(systemName: "phone"))
+                        .font(.footnote)
+                    +
+                    Text(" \(infos.phoneNumber)")
                         .font(.footnote)
                 }
                 //.background(.purple)
