@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3BF3EB2F2C624AAE00EB5E9C /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3EB2E2C624AAE00EB5E9C /* CVAppApp.swift */; };
+		3BF3EB312C624AAE00EB5E9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3EB302C624AAE00EB5E9C /* ContentView.swift */; };
+		3BF3EB332C624AAF00EB5E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3EB322C624AAF00EB5E9C /* Assets.xcassets */; };
+		3BF3EB362C624AAF00EB5E9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3EB352C624AAF00EB5E9C /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		3BFE86212C622F480084FAFB /* Lebenslauf App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lebenslauf App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF3EB2B2C624AAE00EB5E9C /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF3EB2E2C624AAE00EB5E9C /* CVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAppApp.swift; sourceTree = "<group>"; };
+		3BF3EB302C624AAE00EB5E9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BF3EB322C624AAF00EB5E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BF3EB352C624AAF00EB5E9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3BFE86232C622F480084FAFB /* Lebenslauf App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Lebenslauf App"; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		3BFE861E2C622F480084FAFB /* Frameworks */ = {
+		3BF3EB282C624AAE00EB5E9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -25,102 +32,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3BFE86182C622F480084FAFB = {
+		3BF3EB222C624AAE00EB5E9C = {
 			isa = PBXGroup;
 			children = (
-				3BFE86232C622F480084FAFB /* Lebenslauf App */,
-				3BFE86222C622F480084FAFB /* Products */,
+				3BF3EB2D2C624AAE00EB5E9C /* CVApp */,
+				3BF3EB2C2C624AAE00EB5E9C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3BFE86222C622F480084FAFB /* Products */ = {
+		3BF3EB2C2C624AAE00EB5E9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BFE86212C622F480084FAFB /* Lebenslauf App.app */,
+				3BF3EB2B2C624AAE00EB5E9C /* CVApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3BF3EB2D2C624AAE00EB5E9C /* CVApp */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3EB2E2C624AAE00EB5E9C /* CVAppApp.swift */,
+				3BF3EB302C624AAE00EB5E9C /* ContentView.swift */,
+				3BF3EB322C624AAF00EB5E9C /* Assets.xcassets */,
+				3BF3EB342C624AAF00EB5E9C /* Preview Content */,
+			);
+			path = CVApp;
+			sourceTree = "<group>";
+		};
+		3BF3EB342C624AAF00EB5E9C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3EB352C624AAF00EB5E9C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3BFE86202C622F480084FAFB /* Lebenslauf App */ = {
+		3BF3EB2A2C624AAE00EB5E9C /* CVApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BFE862F2C622F4A0084FAFB /* Build configuration list for PBXNativeTarget "Lebenslauf App" */;
+			buildConfigurationList = 3BF3EB392C624AAF00EB5E9C /* Build configuration list for PBXNativeTarget "CVApp" */;
 			buildPhases = (
-				3BFE861D2C622F480084FAFB /* Sources */,
-				3BFE861E2C622F480084FAFB /* Frameworks */,
-				3BFE861F2C622F480084FAFB /* Resources */,
+				3BF3EB272C624AAE00EB5E9C /* Sources */,
+				3BF3EB282C624AAE00EB5E9C /* Frameworks */,
+				3BF3EB292C624AAE00EB5E9C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				3BFE86232C622F480084FAFB /* Lebenslauf App */,
-			);
-			name = "Lebenslauf App";
-			packageProductDependencies = (
-			);
-			productName = "Lebenslauf App";
-			productReference = 3BFE86212C622F480084FAFB /* Lebenslauf App.app */;
+			name = CVApp;
+			productName = CVApp;
+			productReference = 3BF3EB2B2C624AAE00EB5E9C /* CVApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3BFE86192C622F480084FAFB /* Project object */ = {
+		3BF3EB232C624AAE00EB5E9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					3BFE86202C622F480084FAFB = {
-						CreatedOnToolsVersion = 16.0;
+					3BF3EB2A2C624AAE00EB5E9C = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 3BFE861C2C622F480084FAFB /* Build configuration list for PBXProject "Lebenslauf App" */;
-			compatibilityVersion = "Xcode 15.0";
+			buildConfigurationList = 3BF3EB262C624AAE00EB5E9C /* Build configuration list for PBXProject "CVApp" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 3BFE86182C622F480084FAFB;
-			productRefGroup = 3BFE86222C622F480084FAFB /* Products */;
+			mainGroup = 3BF3EB222C624AAE00EB5E9C;
+			productRefGroup = 3BF3EB2C2C624AAE00EB5E9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3BFE86202C622F480084FAFB /* Lebenslauf App */,
+				3BF3EB2A2C624AAE00EB5E9C /* CVApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3BFE861F2C622F480084FAFB /* Resources */ = {
+		3BF3EB292C624AAE00EB5E9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF3EB362C624AAF00EB5E9C /* Preview Assets.xcassets in Resources */,
+				3BF3EB332C624AAF00EB5E9C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3BFE861D2C622F480084FAFB /* Sources */ = {
+		3BF3EB272C624AAE00EB5E9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF3EB312C624AAE00EB5E9C /* ContentView.swift in Sources */,
+				3BF3EB2F2C624AAE00EB5E9C /* CVAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3BFE862D2C622F4A0084FAFB /* Debug */ = {
+		3BF3EB372C624AAF00EB5E9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -172,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -183,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		3BFE862E2C622F4A0084FAFB /* Release */ = {
+		3BF3EB382C624AAF00EB5E9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -239,14 +264,14 @@
 			};
 			name = Release;
 		};
-		3BFE86302C622F4A0084FAFB /* Debug */ = {
+		3BF3EB3A2C624AAF00EB5E9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Lebenslauf App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CVApp/Preview Content\"";
 				DEVELOPMENT_TEAM = L43C5D5DUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -260,7 +285,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinnuzzo.Lebenslauf-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustinnuzzo.CVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -268,14 +293,14 @@
 			};
 			name = Debug;
 		};
-		3BFE86312C622F4A0084FAFB /* Release */ = {
+		3BF3EB3B2C624AAF00EB5E9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Lebenslauf App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CVApp/Preview Content\"";
 				DEVELOPMENT_TEAM = L43C5D5DUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -289,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dustinnuzzo.Lebenslauf-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustinnuzzo.CVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3BFE861C2C622F480084FAFB /* Build configuration list for PBXProject "Lebenslauf App" */ = {
+		3BF3EB262C624AAE00EB5E9C /* Build configuration list for PBXProject "CVApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BFE862D2C622F4A0084FAFB /* Debug */,
-				3BFE862E2C622F4A0084FAFB /* Release */,
+				3BF3EB372C624AAF00EB5E9C /* Debug */,
+				3BF3EB382C624AAF00EB5E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BFE862F2C622F4A0084FAFB /* Build configuration list for PBXNativeTarget "Lebenslauf App" */ = {
+		3BF3EB392C624AAF00EB5E9C /* Build configuration list for PBXNativeTarget "CVApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BFE86302C622F4A0084FAFB /* Debug */,
-				3BFE86312C622F4A0084FAFB /* Release */,
+				3BF3EB3A2C624AAF00EB5E9C /* Debug */,
+				3BF3EB3B2C624AAF00EB5E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3BFE86192C622F480084FAFB /* Project object */;
+	rootObject = 3BF3EB232C624AAE00EB5E9C /* Project object */;
 }

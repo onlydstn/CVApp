@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Lebenslauf App
+//  CVApp
 //
 //  Created by Dustin Nuzzo on 8/6/24.
 //
