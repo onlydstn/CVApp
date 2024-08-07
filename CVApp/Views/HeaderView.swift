@@ -45,7 +45,7 @@ struct HeaderView: View {
                         .font(.title2)
                         .bold()
                 }
-                .padding(1)
+                .padding(2)
                 //.background(.brown)
                 VStack {
                     Text("Learning Mobile Development \n at Syntax Institut")
@@ -54,11 +54,11 @@ struct HeaderView: View {
                 }
                 .padding(1)
                 //.background(.red)
-                VStack {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 20, style: .continuous)
-                            .fill(.white)
-                            .frame(width: 380, height: 50)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .fill(.white)
+                        .frame(width: 380, height: 70)
+                    VStack {
                         
                         HStack(spacing: 100) {
                             Text(Image(systemName: "house"))
@@ -72,7 +72,7 @@ struct HeaderView: View {
                             Text(" \(infos.birthDate)")
                                 .font(.footnote)
                         }
-                        .padding(5)
+                        .padding(3)
                         //.background(.yellow)
                         HStack(spacing: 85) {
                             Text(Image(systemName: "mail"))
@@ -87,10 +87,11 @@ struct HeaderView: View {
                                 .font(.footnote)
                         }
                     }
+                    .padding(5)
                     
                 }
                 Divider()
-                    .padding(5)
+                .padding(10)
                 //.background(.purple)
                 VStack {
                     Text("Hello, I'm Dustin and currently learning Swift, SwiftUI and Kotlin @ Syntax Institut. I'm looking for new job opportunities.")
