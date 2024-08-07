@@ -22,6 +22,7 @@ struct HeaderView: View {
                     .fill(Color(red: 0.3, green: 0.55, blue: 0.8))
                     .frame(height: 135)
                     .edgesIgnoringSafeArea(.top)
+                    
                 Spacer()
             }
             VStack {
@@ -33,6 +34,7 @@ struct HeaderView: View {
                         .clipShape(Circle())
                         .shadow(radius: 10)
                         .overlay(Circle().stroke(Color.white, lineWidth: 2))
+                        .padding(.top, 50)
                     
                     // Bild zoomen wenn es angetippt wird
                         .onTapGesture {
@@ -45,14 +47,16 @@ struct HeaderView: View {
                         .font(.title2)
                         .bold()
                 }
-                .padding(2)
+                .padding(10)
                 //.background(.brown)
                 VStack {
                     Text("Learning Mobile Development \n at Syntax Institut")
+                        .fixedSize()
                         .multilineTextAlignment(.center)
                         .font(.footnote)
+                        //.background(.red)
                 }
-                .padding(1)
+                .padding(5)
                 //.background(.red)
                 ZStack {
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -99,6 +103,7 @@ struct HeaderView: View {
                         .font(.footnote)
                 }
                 Spacer()
+                EducationView()
             }
             .padding(.top)
             //.background(.green)
@@ -124,4 +129,5 @@ struct HeaderView: View {
             
         }
     }
+    
 }

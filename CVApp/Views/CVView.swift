@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct CVView: View {
+   
     var body: some View {
-        HeaderView()
+        VStack {
+            EducationView()
+        }
     }
 }
 
 #Preview {
-    CVView()
+   HeaderView()
 }
