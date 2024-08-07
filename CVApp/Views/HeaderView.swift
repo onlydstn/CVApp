@@ -80,17 +80,26 @@ struct HeaderView: View {
                         .padding(3)
                         //.background(.yellow)
                         HStack(spacing: 30) {
-
-                            Text(Image(systemName: "mail"))
-                                .font(.footnote)
-                            +
-                            Text(" \(infos.email)")
-                                .font(.footnote)
-                            Text(Image(systemName: "phone"))
-                                .font(.footnote)
-                            +
-                            Text(" \(infos.phoneNumber)")
-                                .font(.footnote)
+                            Link(destination: URL(string: "mailto:\(infos.email)")!) {
+                                HStack(spacing: 4) {
+                                    Text(Image(systemName: "mail"))
+                                        .font(.footnote)
+                                        .foregroundStyle(.black)
+                                    Text(" \(infos.email)")
+                                        .font(.footnote)
+                                        .foregroundStyle(.black)
+                                }
+                            }
+                            Link(destination: URL(string: "tel:\(infos.phoneNumber)")!) {
+                                HStack {
+                                    Text(Image(systemName: "phone"))
+                                        .font(.footnote)
+                                        .foregroundStyle(.black)
+                                    Text(" \(infos.phoneNumber)")
+                                        .font(.footnote)
+                                        .foregroundStyle(.black)
+                                }
+                            }
                             
                         }
                         .padding(3)
