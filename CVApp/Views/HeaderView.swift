@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderView: View {
     @State public var isImageTapped = false
     
-    private let infos = UserInfo(name: "Dustin Nuzzo", age: 29, birthDate: "18th February 1995", phoneNumber: "+491711180295", address: "Duisburg, Germany", email: "dustin.nuzzo@icloud.com")
+    private let infos = UserInfo(name: "Dustin Nuzzo", age: 29, birthDate: "February 18, 1995", phoneNumber: "+491711180295", address: "Duisburg, Germany", email: "dustin.nuzzo@icloud.com")
     
     
     var body: some View {
@@ -63,9 +63,9 @@ struct HeaderView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(.white)
-                        .frame(width: 380, height: 55)
-                    VStack {
-                        HStack(spacing: 100) {
+                        .frame(maxWidth: 350, maxHeight: 55)
+                    VStack(alignment: .leading) {
+                        HStack(spacing: 68) {
                             Text(Image(systemName: "house"))
                                 .font(.footnote)
                             +
@@ -79,7 +79,7 @@ struct HeaderView: View {
                         }
                         .padding(3)
                         //.background(.yellow)
-                        HStack(spacing: 85) {
+                        HStack(spacing: 30) {
 
                             Text(Image(systemName: "mail"))
                                 .font(.footnote)
@@ -91,18 +91,20 @@ struct HeaderView: View {
                             +
                             Text(" \(infos.phoneNumber)")
                                 .font(.footnote)
+                            
                         }
                         .padding(3)
                     }
-                    //.padding(0)
+                    //.padding()
                 }
                 Divider()
                     .padding(7)
                 //.background(.purple)
                 VStack {
-                    Text("Hello, I'm Dustin and currently learning Swift, SwiftUI and Kotlin @ Syntax Institut. I'm looking for new job opportunities.")
+                    Text("Hi, I'm Dustin and I'd love to find new job oppurtunities. \n Currently I'm learning Swift and Kotlin @ Syntax Institut.")
                         .multilineTextAlignment(.center)
-                        .font(.footnote)
+                        .font(.system(size: 12))
+                        .frame(maxWidth: 350)
                 }
                 .padding(1)
                 EducationView()
@@ -130,6 +132,7 @@ struct HeaderView: View {
                     .transition(.scale)
             }
         }
+        // TabBar
     }
 }
 

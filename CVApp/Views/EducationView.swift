@@ -9,10 +9,10 @@ import SwiftUI
 
 struct EducationView: View {
     let jobs: [Experience] =
-    [Experience(jobTitle: "Student", companyName: "Syntax Institut", startYear: 2024, endYear: 2025, icon: "logo1"),
-     Experience(jobTitle: "Mobile Consultant", companyName: "Deutsche Telekom AG", startYear: 2023, endYear: 2024, icon: "logo2"),
-     Experience(jobTitle: "Sales Manager Assistant", companyName: "o2 Germany", startYear: 2022, endYear: 2023, icon: "logo3"),
-     Experience(jobTitle: "Agency Manager", companyName: "DVAG", startYear: 2020, endYear: 2022, icon: "icon4"),
+    [Experience(jobTitle: "Student @ Syntax Institut", companyName: "Syntax Institut", startYear: 2024, endYear: 2025, icon: "logo1"),
+     Experience(jobTitle: "Sales Consultant", companyName: "Deutsche Telekom AG", startYear: 2023, endYear: 2024, icon: "logo2"),
+     Experience(jobTitle: "Sales Manager Assistant", companyName: "o2 Telefonice Germany", startYear: 2022, endYear: 2023, icon: "logo3"),
+     Experience(jobTitle: "Selfemployed Agency Manager", companyName: "Deutsche Vermögensberatung AG", startYear: 2020, endYear: 2022, icon: "icon4"),
      Experience(jobTitle: "Work & Travel", companyName: "Italy", startYear: 2019, endYear: 202, icon: "icon5"),
      Experience(jobTitle: "Partnership Relations Manager", companyName: "Commerzbank AG", startYear: 2017, endYear: 2019, icon: "icon6")]
     
