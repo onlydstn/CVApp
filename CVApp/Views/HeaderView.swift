@@ -54,31 +54,40 @@ struct HeaderView: View {
                 }
                 .padding(1)
                 //.background(.red)
-                HStack(spacing: 100) {
-                    Text(Image(systemName: "house"))
-                        .font(.footnote)
-                    +
-                    Text(" \(infos.address)")
-                        .font(.footnote)
-                    Text(Image(systemName: "calendar"))
-                        .font(.footnote)
-                    +
-                    Text(" \(infos.birthDate)")
-                        .font(.footnote)
-                }
-                .padding(5)
-                //.background(.yellow)
-                HStack(spacing: 85) {
-                    Text(Image(systemName: "mail"))
-                        .font(.footnote)
-                    +
-                    Text(" \(infos.email)")
-                        .font(.footnote)
-                    Text(Image(systemName: "phone"))
-                        .font(.footnote)
-                    +
-                    Text(" \(infos.phoneNumber)")
-                        .font(.footnote)
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20, style: .continuous)
+                            .fill(.white)
+                            .frame(width: 380, height: 50)
+                        
+                        HStack(spacing: 100) {
+                            Text(Image(systemName: "house"))
+                                .font(.footnote)
+                            +
+                            Text(" \(infos.address)")
+                                .font(.footnote)
+                            Text(Image(systemName: "calendar"))
+                                .font(.footnote)
+                            +
+                            Text(" \(infos.birthDate)")
+                                .font(.footnote)
+                        }
+                        .padding(5)
+                        //.background(.yellow)
+                        HStack(spacing: 85) {
+                            Text(Image(systemName: "mail"))
+                                .font(.footnote)
+                            +
+                            Text(" \(infos.email)")
+                                .font(.footnote)
+                            Text(Image(systemName: "phone"))
+                                .font(.footnote)
+                            +
+                            Text(" \(infos.phoneNumber)")
+                                .font(.footnote)
+                        }
+                    }
+                    
                 }
                 Divider()
                     .padding(5)
@@ -111,7 +120,7 @@ struct HeaderView: View {
                     }
                     .transition(.scale)
             }
-             
+            
         }
     }
 }
