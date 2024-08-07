@@ -11,11 +11,7 @@ struct CVView: View {
    
     var body: some View {
         VStack {
-            EducationView()
+            HeaderView()
         }
     }
-}
-
-#Preview {
-   HeaderView()
 }

@@ -8,145 +8,160 @@
 import SwiftUI
 
 struct EducationView: View {
-    let job: [Experience] =
+    let jobs: [Experience] =
     [Experience(jobTitle: "Student", companyName: "Syntax Institut", startYear: 2024, endYear: 2025, icon: "logo1"),
      Experience(jobTitle: "Mobile Consultant", companyName: "Deutsche Telekom AG", startYear: 2023, endYear: 2024, icon: "logo2"),
      Experience(jobTitle: "Sales Manager Assistant", companyName: "o2 Germany", startYear: 2022, endYear: 2023, icon: "logo3"),
      Experience(jobTitle: "Agency Manager", companyName: "DVAG", startYear: 2020, endYear: 2022, icon: "icon4"),
-    Experience(jobTitle: "Work & Travel", companyName: "Italy", startYear: 2019, endYear: 202, icon: "icon5"),
-    Experience(jobTitle: "Partnership Relations Manager", companyName: "Commerzbank AG", startYear: 2017, endYear: 2019, icon: "icon6")]
+     Experience(jobTitle: "Work & Travel", companyName: "Italy", startYear: 2019, endYear: 202, icon: "icon5"),
+     Experience(jobTitle: "Partnership Relations Manager", companyName: "Commerzbank AG", startYear: 2017, endYear: 2019, icon: "icon6")]
     
     var body: some View {
-        
         ZStack {
             Rectangle()
-                .frame(maxWidth: 350, maxHeight: 350)
+                .foregroundColor(.white)
                 .cornerRadius(15)
-                .foregroundStyle(.gray.opacity(0.2))
-            VStack {
+            
+            VStack(alignment: .leading) {
                 Text("Education")
-                Rectangle() //divider
-                    .frame(maxWidth: 320, maxHeight: 2)
-                    .cornerRadius(5)
+                    .font(.headline)
+                    .padding(.leading, 16)
                 
-                // erster Eintrag
-                HStack {
-                    Image("logo1")
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .clipShape(Circle())
-                    Text(job[0].jobTitle)
-                        .font(.footnote)
-                    Text(job[0].companyName)
-                        .font(.footnote)
-                    Text(String(job[0].startYear))
-                        .font(.footnote)
-                    Text(String(job[0].endYear))
-                        .font(.footnote)
-                }
-                Rectangle() //divider
-                    .frame(maxWidth: 320, maxHeight: 2)
-                    .cornerRadius(5)
-                
-                // zweiter Eintrag
-                HStack {
-                    Image("logo2")
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .clipShape(Circle())
-                    Text(job[1].jobTitle)
-                        .font(.footnote)
-                    Text(job[1].companyName)
-                        .font(.footnote)
-                    Text(String(job[1].startYear))
-                        .font(.footnote)
-                    Text(String(job[1].endYear))
-                        .font(.footnote)
-                }
                 Rectangle()
-                    .frame(maxWidth: 320, maxHeight: 2)
+                    .frame(maxWidth: 350, maxHeight: 1)
+                    .foregroundColor(.gray)
                     .cornerRadius(5)
                 
-                // dritter Eintrag
-                HStack {
-                    Image("logo3")
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .clipShape(Circle())
-                    Text(job[2].jobTitle)
-                        .font(.footnote)
-                    Text(job[2].companyName)
-                        .font(.footnote)
-                    Text(String(job[2].startYear))
-                        .font(.footnote)
-                    Text(String(job[2].endYear))
-                        .font(.footnote)
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        
+                        // erster Eintrag
+                        HStack(alignment: .top) {
+                            Image("logo1")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text(jobs[0].jobTitle)
+                                    .font(.footnote)
+                                    .bold()
+                                Text(jobs[0].companyName)
+                                    .font(.footnote)
+                                Text(String("\(jobs[0].startYear) - \(jobs[0].endYear)"))
+                                    .font(.footnote)
+                            }
+                            .padding(.leading, 8)
+                        }
+                        Divider()
+                        
+                        // zweiter Eintrag
+                        HStack(alignment: .top) {
+                            Image("logo2")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text(jobs[1].jobTitle)
+                                    .font(.footnote)
+                                    .bold()
+                                Text(jobs[1].companyName)
+                                    .font(.footnote)
+                                Text(String("\(jobs[1].startYear) - \(jobs[1].endYear)"))
+                                    .font(.footnote)
+                            }
+                            .padding(.leading, 8)
+                        }
+                        Divider()
+                        
+                        // dritter Eintrag
+                        HStack(alignment: .top) {
+                            Image("logo3")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text(jobs[2].jobTitle)
+                                    .font(.footnote)
+                                    .bold()
+                                Text(jobs[2].companyName)
+                                    .font(.footnote)
+                                Text(String("\(jobs[2].startYear) - \(jobs[2].endYear)"))
+                                    .font(.footnote)
+                            }
+                            .padding(.leading, 8)
+                        }
+                        Divider()
+                        
+                        // vierter Eintrag
+                        HStack(alignment: .top) {
+                            Image("logo4")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text(jobs[3].jobTitle)
+                                    .font(.footnote)
+                                    .bold()
+                                Text(jobs[3].companyName)
+                                    .font(.footnote)
+                                Text(String("\(jobs[3].startYear) - \(jobs[3].endYear)"))
+                                    .font(.footnote)
+                            }
+                            .padding(.leading, 8)
+                        }
+                        Divider()
+                        
+                        // fünfter Eintrag
+                        HStack(alignment: .top) {
+                            Image("logo5")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text(jobs[4].jobTitle)
+                                    .font(.footnote)
+                                    .bold()
+                                Text(jobs[4].companyName)
+                                    .font(.footnote)
+                                Text(String("\(jobs[4].startYear) - \(jobs[4].endYear)"))
+                                    .font(.footnote)
+                            }
+                            .padding(.leading, 8)
+                        }
+                        Divider()
+                        
+                        // sechster Eintrag
+                        HStack(alignment: .top) {
+                            Image("logo6")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text(jobs[5].jobTitle)
+                                    .font(.footnote)
+                                    .bold()
+                                Text(jobs[5].companyName)
+                                    .font(.footnote)
+                                Text(String("\(jobs[5].startYear) - \(jobs[5].endYear)"))
+                                    .font(.footnote)
+                            }
+                            .padding(.leading, 8)
+                        }
+                        Divider()
+                    }
+                    .padding(.horizontal, 16)
                 }
-                Rectangle()
-                    .frame(maxWidth: 320, maxHeight: 2)
-                    .cornerRadius(5)
-                
-                // vierter Eintrag
-                HStack {
-                    Image("logo4")
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .clipShape(Circle())
-                    Text(job[3].jobTitle)
-                        .font(.footnote)
-                    Text(job[3].companyName)
-                        .font(.footnote)
-                    Text(String(job[3].startYear))
-                        .font(.footnote)
-                    Text(String(job[3].endYear))
-                        .font(.footnote)
-                }
-                Rectangle()
-                    .frame(maxWidth: 320, maxHeight: 2)
-                    .cornerRadius(5)
-                
-                // fünfter Eintrag
-                HStack {
-                    Image("logo5")
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .clipShape(Circle())
-                    Text(job[4].jobTitle)
-                        .font(.footnote)
-                    Text(job[4].companyName)
-                        .font(.footnote)
-                    Text(String(job[4].startYear))
-                        .font(.footnote)
-                    Text(String(job[4].endYear))
-                        .font(.footnote)
-                }
-                Rectangle()
-                    .frame(maxWidth: 320, maxHeight: 2)
-                    .cornerRadius(5)
-                
-                // sechster Eintrag
-                HStack {
-                    Image("logo6")
-                        .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
-                        .clipShape(Circle())
-                    Text(job[5].jobTitle)
-                        .font(.footnote)
-                    Text(job[5].companyName)
-                        .font(.footnote)
-                    Text(String(job[5].startYear))
-                        .font(.footnote)
-                    Text(String(job[5].endYear))
-                        .font(.footnote)
-                }
-                Rectangle()
-                    .frame(maxWidth: 320, maxHeight: 2)
-                    .cornerRadius(5)
+                .frame(maxWidth: .infinity)
+                Spacer()
             }
+            .padding(.vertical, 16)
         }
+        .frame(maxWidth: 350, maxHeight: 385)
     }
-}
-
-#Preview {
-    EducationView()
 }

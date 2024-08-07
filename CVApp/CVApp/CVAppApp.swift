@@ -11,8 +11,7 @@ import SwiftUI
 struct CVAppApp: App {
     var body: some Scene {
         WindowGroup {
-            //CVView()
-            EducationView()
+            CVView()
         }
     }
 }

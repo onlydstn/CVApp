@@ -20,7 +20,7 @@ struct HeaderView: View {
             VStack {
                 RoundedRectangle(cornerRadius: 25, style: .continuous)
                     .fill(Color(red: 0.3, green: 0.55, blue: 0.8))
-                    .frame(height: 135)
+                    .frame(height: 110)
                     .edgesIgnoringSafeArea(.top)
                     
                 Spacer()
@@ -30,11 +30,12 @@ struct HeaderView: View {
                     Image("profilePicture")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 115, height: 115)
+                        .frame(height: 100)
                         .clipShape(Circle())
-                        .shadow(radius: 10)
-                        .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                        .padding(.top, 50)
+                        .shadow(radius: 25)
+                        .overlay(Circle().stroke(Color.white, lineWidth: 0))
+                        .padding(.top, 15)
+                        
                     
                     // Bild zoomen wenn es angetippt wird
                         .onTapGesture {
@@ -46,8 +47,9 @@ struct HeaderView: View {
                     Text(infos.name)
                         .font(.title2)
                         .bold()
+                        .padding(-5)
                 }
-                .padding(10)
+                .padding(.top, -20) // negatives padding um VStack noch oben zu schieben
                 //.background(.brown)
                 VStack {
                     Text("Learning Mobile Development \n at Syntax Institut")
@@ -56,14 +58,13 @@ struct HeaderView: View {
                         .font(.footnote)
                         //.background(.red)
                 }
-                .padding(5)
+                .padding(3)
                 //.background(.red)
                 ZStack {
-                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(.white)
-                        .frame(width: 380, height: 70)
+                        .frame(width: 380, height: 55)
                     VStack {
-                        
                         HStack(spacing: 100) {
                             Text(Image(systemName: "house"))
                                 .font(.footnote)
@@ -79,6 +80,7 @@ struct HeaderView: View {
                         .padding(3)
                         //.background(.yellow)
                         HStack(spacing: 85) {
+
                             Text(Image(systemName: "mail"))
                                 .font(.footnote)
                             +
@@ -90,22 +92,23 @@ struct HeaderView: View {
                             Text(" \(infos.phoneNumber)")
                                 .font(.footnote)
                         }
+                        .padding(3)
                     }
-                    .padding(5)
-                    
+                    //.padding(0)
                 }
                 Divider()
-                .padding(10)
+                    .padding(7)
                 //.background(.purple)
                 VStack {
                     Text("Hello, I'm Dustin and currently learning Swift, SwiftUI and Kotlin @ Syntax Institut. I'm looking for new job opportunities.")
                         .multilineTextAlignment(.center)
                         .font(.footnote)
                 }
-                Spacer()
+                .padding(1)
                 EducationView()
+                    .padding()
             }
-            .padding(.top)
+            //padding()
             //.background(.green)
             
             // wenn nicht gezoomtes Profilbild getippt wird
@@ -126,8 +129,10 @@ struct HeaderView: View {
                     }
                     .transition(.scale)
             }
-            
         }
     }
-    
+}
+
+#Preview {
+    HeaderView()
 }
