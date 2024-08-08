@@ -17,12 +17,11 @@ struct HeaderView: View {
         ZStack {
             Color(red: 0.97, green: 0.97, blue: 0.97)
                 .edgesIgnoringSafeArea(.all)
-            VStack {
-                RoundedRectangle(cornerRadius: 25, style: .continuous)
+            VStack { // blauer Banner
+                RoundedRectangle(cornerRadius: 25)
                     .fill(Color(red: 0.3, green: 0.55, blue: 0.8))
                     .frame(height: 110)
                     .edgesIgnoringSafeArea(.top)
-                    
                 Spacer()
             }
             VStack {
@@ -36,7 +35,6 @@ struct HeaderView: View {
                         .overlay(Circle().stroke(Color.white, lineWidth: 0))
                         .padding(.top, 15)
                         
-                    
                     // Bild zoomen wenn es angetippt wird
                         .onTapGesture {
                             withAnimation(.bouncy) {
@@ -60,10 +58,6 @@ struct HeaderView: View {
                 }
                 .padding(3)
                 //.background(.red)
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(.white)
-                        .frame(maxWidth: 350, maxHeight: 55)
                     VStack(alignment: .leading) {
                         HStack(spacing: 68) {
                             Text(Image(systemName: "house"))
@@ -104,8 +98,9 @@ struct HeaderView: View {
                         }
                         .padding(3)
                     }
-                    //.padding()
-                }
+                    .padding(3)
+                    .background(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
                 Divider()
                     .padding(7)
                 //.background(.purple)
