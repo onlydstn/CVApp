@@ -13,7 +13,7 @@ struct EducationView: View {
      Experience(jobTitle: "Sales Consultant", companyName: "Deutsche Telekom AG", startYear: 2023, endYear: 2024, icon: "logo2"),
      Experience(jobTitle: "Sales Manager Assistant", companyName: "o2 Telefonice Germany", startYear: 2022, endYear: 2023, icon: "logo3"),
      Experience(jobTitle: "Selfemployed Agency Manager", companyName: "Deutsche Vermögensberatung AG", startYear: 2020, endYear: 2022, icon: "icon4"),
-     Experience(jobTitle: "Work & Travel", companyName: "Italy", startYear: 2019, endYear: 202, icon: "icon5"),
+     Experience(jobTitle: "Work & Travel", companyName: "Italy", startYear: 2019, endYear: 2020, icon: "icon5"),
      Experience(jobTitle: "Partnership Relations Manager", companyName: "Commerzbank AG", startYear: 2017, endYear: 2019, icon: "icon6")]
     
     var body: some View {
@@ -51,7 +51,7 @@ struct EducationView: View {
                                 Text(String("\(jobs[0].startYear) - \(jobs[0].endYear)"))
                                     .font(.footnote)
                             }
-                            .padding(.leading, 8)
+                            .padding(.leading, 8) // Abstand Text zu Logos
                         }
                         Divider()
                         
@@ -151,17 +151,13 @@ struct EducationView: View {
                                 Text(String("\(jobs[5].startYear) - \(jobs[5].endYear)"))
                                     .font(.footnote)
                             }
-                            .padding(.leading, 8)
                         }
-                        Divider()
                     }
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal) // Padding für den Inhalt meiner EducationView
                 }
-                .frame(maxWidth: .infinity)
-                Spacer()
             }
-            .padding(.vertical, 16)
+            .padding(.vertical) // Padding für Education-Text in der EducationView
         }
-        .frame(maxWidth: 350, maxHeight: 385)
+        .padding(5) // Padding für die EducationView
     }
 }
