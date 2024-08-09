@@ -14,7 +14,7 @@ struct HeaderView: View {
     
     
     var body: some View {
-        ZStack(alignment: .top) { #warning("jetzt wird Profilbild oben gezoomt statt in der Mitte der View")
+        ZStack(alignment: .top) {
             Color(red: 0.97, green: 0.97, blue: 0.97) // Hintergrundfarbe der gesamten View auf Offwhite
                 .edgesIgnoringSafeArea(.all)
             
@@ -113,18 +113,22 @@ struct HeaderView: View {
                 Color.black.opacity(0.6)
                     .edgesIgnoringSafeArea(.all)
                     .onTapGesture {
-                        withAnimation(.bouncy) {
+                        withAnimation() {
                             isImageTapped = false
                         }
                     }
                 // wenn gezoomtes Profilbild getippt wird
-                ZoomedProfilePictureView()
-                    .onTapGesture {
-                        withAnimation(.bouncy) {
-                            isImageTapped = false
+                VStack {
+                    Spacer()
+                    ZoomedProfilePictureView()
+                        .onTapGesture {
+                            withAnimation() {
+                                isImageTapped = false
+                            }
                         }
-                    }
-                    .transition(.scale)
+                        .transition(.scale)
+                    Spacer()
+                }
             }
         }
     }
