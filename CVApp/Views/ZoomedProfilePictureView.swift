@@ -13,7 +13,7 @@ struct ZoomedProfilePictureView: View {
             Image("profilePicture")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 300, height: 300) // Vergrößertes Bild
+                .frame(width: 300, height: 300) // Bildgröße
                 .clipShape(Circle())
                 .shadow(radius: 20)
                 .overlay(Circle().stroke(Color.white, lineWidth: 2))

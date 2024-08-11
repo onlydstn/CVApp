@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Experience {
+struct JobCareer {
     var jobTitle: String
     var companyName: String
     var startYear: Int

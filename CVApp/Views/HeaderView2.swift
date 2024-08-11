@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeaderView: View {
+struct HeaderView2: View {
     @State private var isImageTapped = false
     
     private let infos = UserInfo(name: "Dustin Nuzzo", age: 29, birthDate: "February 18, 1995", phoneNumber: "+491711180295", address: "Duisburg, Germany", email: "dustin.nuzzo@icloud.com")
@@ -104,7 +104,7 @@ struct HeaderView: View {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 12))
                 
-                EmployerView()
+                EducationView()
                     .padding()
             }
             
