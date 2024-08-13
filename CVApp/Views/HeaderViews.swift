@@ -26,7 +26,3 @@ struct HeaderViews: View {
         }
     }
 }
-
-#Preview {
-    HeaderViews()
-}

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct JobCareer {
+struct JobCareer: Identifiable {
+    var id: UUID = UUID()
+    
     var jobTitle: String
     var companyName: String
     var startYear: Int

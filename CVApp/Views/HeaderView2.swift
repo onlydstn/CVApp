@@ -131,5 +131,5 @@ struct HeaderView2: View {
 }
 
 #Preview {
-    HeaderView()
+    HeaderView2()
 }
