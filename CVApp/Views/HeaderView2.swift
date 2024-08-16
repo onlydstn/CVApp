@@ -21,6 +21,7 @@ struct HeaderView2: View {
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color(red: 0.3, green: 0.55, blue: 0.8))
                 .frame(height: 105)
+                .shadow(color: .gray, radius: 5.0)
                 .edgesIgnoringSafeArea(.top)
             
             VStack {
@@ -96,6 +97,7 @@ struct HeaderView2: View {
                 .padding(3)
                 .background(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                .shadow(color: .gray, radius: 1.5)
                 
                 Divider()
                     .padding(7)

@@ -21,6 +21,7 @@ struct HeaderView: View {
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color(red: 0.3, green: 0.55, blue: 0.8))
                 .frame(height: 105)
+                .shadow(color: .gray, radius: 5.0)
                 .edgesIgnoringSafeArea(.top)
             
             VStack {
@@ -30,7 +31,7 @@ struct HeaderView: View {
                         .scaledToFit()
                         .frame(height: 100)
                         .clipShape(Circle())
-                        .shadow(radius: 25)
+                        .shadow(radius: 5.0)
                         .overlay(Circle().stroke(Color.gray))
                         .padding(.top, 15)
                     
@@ -96,6 +97,7 @@ struct HeaderView: View {
                 .padding(3)
                 .background(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                .shadow(color: .gray, radius: 1.5)
                 
                 Divider()
                     .padding(7)
