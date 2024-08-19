@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProjectView: View {
     @State private var sheetShown = false
+    @State private var isPulsating = false
     
     let projects: [ProjectCareer] =
     [ProjectCareer(projectTitle: "CV App", projectDescription: "Dustin", startYear: 2024, endYear: 2024, icon: "")]
@@ -39,24 +40,22 @@ struct ProjectView: View {
                                 Button(action: {
                                     sheetShown = true
                                 }, label: {
-                                    Image(systemName: "ellipsis")
+                                    Image("cvicon")
                                         .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 20, height: 20)
-                                        .padding(7.5)
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 50, height: 50)
+                                        .clipShape(Circle())
+                                        .shadow(radius: 3)
+                                        .padding(.top, 8)
+                                        .scaleEffect(isPulsating ? 1.2 : 1.0)
+                                        .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: isPulsating)
                                 })
-                                .buttonStyle(.borderedProminent)
-                                .buttonBorderShape(.circle)
-                                .tint(.secondary)
-                                .foregroundStyle(.white)
-                                .frame(width: 50, height: 50)
+                                .onAppear {
+                                    isPulsating = true
+                                }
                                 .sheet(isPresented: $sheetShown) {
                                     VStack {
-                                        // Inhalt einfügen
-                                        Text("Test")
-                                        Button("Dismiss") {
-                                            sheetShown = false
-                                        }
+                                        CardView(sheetShown: $sheetShown)
                                     }
                                 }
                                 
