@@ -168,3 +168,7 @@ struct HeaderView: View {
 enum ViewType {
     case project, employer, education
 }
+
+#Preview {
+    CVView()
+}

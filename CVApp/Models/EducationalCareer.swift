@@ -16,3 +16,4 @@ struct EducationalCareer: Identifiable {
     var endYear: Int
     var icon: String
 }
+

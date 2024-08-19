@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EmployerView: View {
+    @State private var sheetShown = false
+    
     let jobs: [JobCareer] =
     [JobCareer(jobTitle: "Student @ Syntax Institut", companyName: "Syntax Institut", startYear: 2024, endYear: 2025, icon: "logo1"),
      JobCareer(jobTitle: "Sales Consultant", companyName: "Deutsche Telekom AG", startYear: 2023, endYear: 2024, icon: "logo2"),
@@ -44,7 +46,7 @@ struct EmployerView: View {
                                     .resizable()
                                     .frame(width: 50, height: 50)
                                     .clipShape(Circle())
-                                
+                                                                        
                                 VStack(alignment: .leading) {
                                     Text(job.jobTitle)
                                         .font(.footnote)
@@ -56,6 +58,7 @@ struct EmployerView: View {
                                 }
                                 .padding(.leading, 8)
                             }
+                            
                             Divider()
                         }
                     }
