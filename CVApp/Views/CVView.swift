@@ -11,7 +11,7 @@ struct CVView: View {
    
     var body: some View {
         VStack {
-            HeaderViews()
+            MainView()
         }
     }
 }

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3778DED02C68DB230020FCFF /* HeaderViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DECF2C68DB230020FCFF /* HeaderViews.swift */; };
-		3778DED22C68DC850020FCFF /* HeaderView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED12C68DC850020FCFF /* HeaderView2.swift */; };
+		376874102C733439002842C9 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3768740F2C733439002842C9 /* ProjectView.swift */; };
 		3778DED42C68DD720020FCFF /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED32C68DD720020FCFF /* EducationView.swift */; };
 		3778DED62C68E8D50020FCFF /* EducationalCareer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED52C68E8D50020FCFF /* EducationalCareer.swift */; };
 		3B4C633A2C624D7A005EDBE2 /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C63392C624D7A005EDBE2 /* CVAppApp.swift */; };
@@ -23,8 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3778DECF2C68DB230020FCFF /* HeaderViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViews.swift; sourceTree = "<group>"; };
-		3778DED12C68DC850020FCFF /* HeaderView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView2.swift; sourceTree = "<group>"; };
+		3768740F2C733439002842C9 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		3778DED32C68DD720020FCFF /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		3778DED52C68E8D50020FCFF /* EducationalCareer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalCareer.swift; sourceTree = "<group>"; };
 		3B4C63362C624D7A005EDBE2 /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,12 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				3B4C63492C624E9E005EDBE2 /* CVView.swift */,
-				3778DECF2C68DB230020FCFF /* HeaderViews.swift */,
 				3B4C634B2C625F7F005EDBE2 /* HeaderView.swift */,
-				3778DED12C68DC850020FCFF /* HeaderView2.swift */,
 				3BF789712C6375380071E308 /* ZoomedProfilePictureView.swift */,
 				3BF7898F2C63BF860071E308 /* EmployerView.swift */,
 				3778DED32C68DD720020FCFF /* EducationView.swift */,
+				3768740F2C733439002842C9 /* ProjectView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,10 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3778DED22C68DC850020FCFF /* HeaderView2.swift in Sources */,
 				3B4C634E2C626230005EDBE2 /* Headers.swift in Sources */,
 				3B4C633A2C624D7A005EDBE2 /* CVAppApp.swift in Sources */,
-				3778DED02C68DB230020FCFF /* HeaderViews.swift in Sources */,
 				3B4C634C2C625F80005EDBE2 /* HeaderView.swift in Sources */,
 				3778DED42C68DD720020FCFF /* EducationView.swift in Sources */,
 				3BF7898E2C6399860071E308 /* JobCareer.swift in Sources */,
@@ -191,6 +186,7 @@
 				3BF789902C63BF860071E308 /* EmployerView.swift in Sources */,
 				3B4C634A2C624E9E005EDBE2 /* CVView.swift in Sources */,
 				3BF789722C6375380071E308 /* ZoomedProfilePictureView.swift in Sources */,
+				376874102C733439002842C9 /* ProjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

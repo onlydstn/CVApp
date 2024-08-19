@@ -7,8 +7,32 @@
 
 import SwiftUI
 
+struct MainView: View {
+    var body: some View {
+        TabView {
+            HeaderView(viewType: .employer)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            HeaderView(viewType: .education)
+                .tabItem {
+                    Label("Education", systemImage: "graduationcap")
+                }
+            
+            HeaderView(viewType: .project)
+                .tabItem {
+                    Label("Projects", systemImage: "doc")
+                }
+            
+        }
+    }
+}
+
+
 struct HeaderView: View {
     @State private var isImageTapped = false
+    var viewType: ViewType
     
     private let infos = UserInfo(name: "Dustin Nuzzo", age: 29, birthDate: "February 18, 1995", phoneNumber: "+491711180295", address: "Duisburg, Germany", email: "dustin.nuzzo@icloud.com")
     
@@ -31,7 +55,7 @@ struct HeaderView: View {
                         .scaledToFit()
                         .frame(height: 100)
                         .clipShape(Circle())
-                        .shadow(radius: 5.0)
+                        .shadow(radius: 25)
                         .overlay(Circle().stroke(Color.gray))
                         .padding(.top, 15)
                     
@@ -106,8 +130,17 @@ struct HeaderView: View {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 12))
                 
-                EmployerView()
-                    .padding()
+                switch viewType {
+                case .employer:
+                    EmployerView()
+                        .padding()
+                case .education:
+                    EducationView()
+                        .padding()
+                case .project:
+                    ProjectView()
+                        .padding()
+                }
             }
             
             // wenn nicht gezoomtes Profilbild getippt wird
@@ -132,6 +165,6 @@ struct HeaderView: View {
     }
 }
 
-#Preview {
-    HeaderViews()
+enum ViewType {
+    case project, employer, education
 }
