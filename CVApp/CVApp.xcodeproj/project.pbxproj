@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376531512C7481C9001F3186 /* SmartHomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376531502C7481C9001F3186 /* SmartHomeCardView.swift */; };
+		376531532C749940001F3186 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376531522C749940001F3186 /* ProjectViewModel.swift */; };
 		376874102C733439002842C9 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3768740F2C733439002842C9 /* ProjectView.swift */; };
 		3778DED42C68DD720020FCFF /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED32C68DD720020FCFF /* EducationView.swift */; };
 		3778DED62C68E8D50020FCFF /* EducationalCareer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED52C68E8D50020FCFF /* EducationalCareer.swift */; };
 		37CA14AA2C73825E002B2D35 /* ProjectCareer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA14A92C73825E002B2D35 /* ProjectCareer.swift */; };
-		37CA14AC2C738E8D002B2D35 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA14AB2C738E8D002B2D35 /* CardView.swift */; };
+		37CA14AC2C738E8D002B2D35 /* CVCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA14AB2C738E8D002B2D35 /* CVCardView.swift */; };
 		3B4C633A2C624D7A005EDBE2 /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C63392C624D7A005EDBE2 /* CVAppApp.swift */; };
 		3B4C633E2C624D7B005EDBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C633D2C624D7B005EDBE2 /* Assets.xcassets */; };
 		3B4C63412C624D7B005EDBE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C63402C624D7B005EDBE2 /* Preview Assets.xcassets */; };
@@ -24,11 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		376531502C7481C9001F3186 /* SmartHomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeCardView.swift; sourceTree = "<group>"; };
+		376531522C749940001F3186 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		3768740F2C733439002842C9 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		3778DED32C68DD720020FCFF /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		3778DED52C68E8D50020FCFF /* EducationalCareer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalCareer.swift; sourceTree = "<group>"; };
 		37CA14A92C73825E002B2D35 /* ProjectCareer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCareer.swift; sourceTree = "<group>"; };
-		37CA14AB2C738E8D002B2D35 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		37CA14AB2C738E8D002B2D35 /* CVCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCardView.swift; sourceTree = "<group>"; };
 		3B4C63362C624D7A005EDBE2 /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4C63392C624D7A005EDBE2 /* CVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVAppApp.swift; sourceTree = "<group>"; };
 		3B4C633D2C624D7B005EDBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				3BF7898D2C6399860071E308 /* JobCareer.swift */,
 				3778DED52C68E8D50020FCFF /* EducationalCareer.swift */,
 				37CA14A92C73825E002B2D35 /* ProjectCareer.swift */,
+				376531522C749940001F3186 /* ProjectViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,7 +113,8 @@
 				3BF7898F2C63BF860071E308 /* EmployerView.swift */,
 				3778DED32C68DD720020FCFF /* EducationView.swift */,
 				3768740F2C733439002842C9 /* ProjectView.swift */,
-				37CA14AB2C738E8D002B2D35 /* CardView.swift */,
+				37CA14AB2C738E8D002B2D35 /* CVCardView.swift */,
+				376531502C7481C9001F3186 /* SmartHomeCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376531532C749940001F3186 /* ProjectViewModel.swift in Sources */,
 				3B4C634E2C626230005EDBE2 /* Headers.swift in Sources */,
 				3B4C633A2C624D7A005EDBE2 /* CVAppApp.swift in Sources */,
 				3B4C634C2C625F80005EDBE2 /* HeaderView.swift in Sources */,
@@ -192,8 +199,9 @@
 				37CA14AA2C73825E002B2D35 /* ProjectCareer.swift in Sources */,
 				3BF789902C63BF860071E308 /* EmployerView.swift in Sources */,
 				3B4C634A2C624E9E005EDBE2 /* CVView.swift in Sources */,
+				376531512C7481C9001F3186 /* SmartHomeCardView.swift in Sources */,
 				3BF789722C6375380071E308 /* ZoomedProfilePictureView.swift in Sources */,
-				37CA14AC2C738E8D002B2D35 /* CardView.swift in Sources */,
+				37CA14AC2C738E8D002B2D35 /* CVCardView.swift in Sources */,
 				376874102C733439002842C9 /* ProjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

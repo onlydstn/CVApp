@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-struct CardView: View {
-    @Binding var sheetShown: Bool
+struct CVCardView: View {
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        
         
         HStack {
             Text("Curriculum Vitae")
@@ -22,7 +21,7 @@ struct CardView: View {
                 .padding(.leading, 24)
             
             Button(action: {
-                sheetShown = false
+                presentationMode.wrappedValue.dismiss()
             }, label: {
                 Image(systemName: "xmark.circle")
                     .font(.system(size: 24))
@@ -46,8 +45,4 @@ struct CardView: View {
             }
         }
     }
-}
-
-#Preview {
-    CardView(sheetShown: .constant(true))
 }

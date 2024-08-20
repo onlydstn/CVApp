@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ProjectView: View {
-    @State private var sheetShown = false
-    @State private var isPulsating = false
+    //@State private var sheetShown: Bool = false
+    @StateObject private var viewModel = ProjectViewModel()
+    //@State private var selectedProject: ProjectCareer?
+    @State private var isPulsating: Bool = false
     
     let projects: [ProjectCareer] =
-    [ProjectCareer(projectTitle: "CV App", projectDescription: "Dustin", startYear: 2024, endYear: 2024, icon: "")]
+    [ProjectCareer(projectTitle: "CV App", projectDescription: "Dustin", startYear: 2024, endYear: 2024, icon: "cvicon"),
+     ProjectCareer(projectTitle: "Smart Home Simulator", projectDescription: "a simulated SmartHome app", startYear: 2024, endYear: 2024, icon: "smarthomeicon")]
     
     var body: some View {
         ZStack {
@@ -38,9 +41,10 @@ struct ProjectView: View {
                         ForEach(projects) { project in
                             HStack(alignment: .top) {
                                 Button(action: {
-                                    sheetShown = true
+                                    viewModel.selectedProject = project
+                                    viewModel.sheetShown = true
                                 }, label: {
-                                    Image("cvicon")
+                                    Image(project.icon)
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
                                         .frame(width: 50, height: 50)
@@ -52,11 +56,6 @@ struct ProjectView: View {
                                 })
                                 .onAppear {
                                     isPulsating = true
-                                }
-                                .sheet(isPresented: $sheetShown) {
-                                    VStack {
-                                        CardView(sheetShown: $sheetShown)
-                                    }
                                 }
                                 
                                 VStack(alignment: .leading) {
@@ -79,9 +78,24 @@ struct ProjectView: View {
             .padding(.vertical) // Padding für Education-Text in der EducationView
         }
         .padding(5) // Padding für die EducationView
+        .sheet(isPresented: $viewModel.sheetShown) {
+            if let project = viewModel.selectedProject {
+                viewForProject(project)
+            } else {
+                Text("No project selected.")
+            }
+        }
     }
-}
-
-#Preview {
-    ProjectView()
+    
+    @ViewBuilder
+    private func viewForProject(_ project: ProjectCareer) -> some View {
+        switch project.projectTitle {
+        case "CV App":
+            CVCardView()
+        case "Smart Home Simulator":
+            SmartHomeCardView()
+        default:
+            Text("No view available.")
+        }
+    }
 }
