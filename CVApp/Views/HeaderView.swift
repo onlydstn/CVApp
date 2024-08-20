@@ -101,7 +101,7 @@ struct HeaderView: View {
                                     .foregroundStyle(.black)
                                 Text(" \(infos.email)")
                                     .font(.footnote)
-                                    .foregroundStyle(.black)
+                                    .foregroundStyle(.primary)
                             }
                         }
                         
@@ -111,7 +111,7 @@ struct HeaderView: View {
                                     .font(.footnote)
                                     .foregroundStyle(.black)
                                 Text(" \(infos.phoneNumber)")
-                                    .font(.footnote)
+                                    .font(.footnote).underline()
                                     .foregroundStyle(.black)
                             }
                         }

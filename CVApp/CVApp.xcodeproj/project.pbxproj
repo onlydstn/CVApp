@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		376531512C7481C9001F3186 /* SmartHomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376531502C7481C9001F3186 /* SmartHomeCardView.swift */; };
 		376531532C749940001F3186 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376531522C749940001F3186 /* ProjectViewModel.swift */; };
+		376531552C74AC4A001F3186 /* LoginCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376531542C74AC4A001F3186 /* LoginCardView.swift */; };
 		376874102C733439002842C9 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3768740F2C733439002842C9 /* ProjectView.swift */; };
 		3778DED42C68DD720020FCFF /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED32C68DD720020FCFF /* EducationView.swift */; };
 		3778DED62C68E8D50020FCFF /* EducationalCareer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED52C68E8D50020FCFF /* EducationalCareer.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		376531502C7481C9001F3186 /* SmartHomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeCardView.swift; sourceTree = "<group>"; };
 		376531522C749940001F3186 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		376531542C74AC4A001F3186 /* LoginCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCardView.swift; sourceTree = "<group>"; };
 		3768740F2C733439002842C9 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		3778DED32C68DD720020FCFF /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		3778DED52C68E8D50020FCFF /* EducationalCareer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalCareer.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				3768740F2C733439002842C9 /* ProjectView.swift */,
 				37CA14AB2C738E8D002B2D35 /* CVCardView.swift */,
 				376531502C7481C9001F3186 /* SmartHomeCardView.swift */,
+				376531542C74AC4A001F3186 /* LoginCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376531552C74AC4A001F3186 /* LoginCardView.swift in Sources */,
 				376531532C749940001F3186 /* ProjectViewModel.swift in Sources */,
 				3B4C634E2C626230005EDBE2 /* Headers.swift in Sources */,
 				3B4C633A2C624D7A005EDBE2 /* CVAppApp.swift in Sources */,

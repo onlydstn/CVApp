@@ -12,7 +12,6 @@ struct ProjectCareer: Identifiable {
     
     var projectTitle: String
     var projectDescription: String
-    var startYear: Int
-    var endYear: Int
+    var githubLink: String
     var icon: String
 }

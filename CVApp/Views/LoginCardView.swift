@@ -1,25 +1,25 @@
 //
-//  CardView.swift
+//  OnboardingCardView.swift
 //  CVApp
 //
-//  Created by Dustin Nuzzo on 19.08.24.
+//  Created by Dustin Nuzzo on 20.08.24.
 //
 
 import SwiftUI
 
-struct CVCardView: View {
+struct LoginCardView: View {
     @Binding var isPresented: Bool
     
     var body: some View {
         VStack {
-            Text("Curriculum Vitae")
+            Text("Login View")
                 .padding(.top, 12)
                 .font(.title2)
                 .bold()
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 18)
             
-            Text("a modern looking UI representing my CV")
+            Text("my first Login View")
                 .font(.footnote)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 18)
@@ -28,7 +28,7 @@ struct CVCardView: View {
         GeometryReader { geometry in
             ScrollView {
                 VStack {
-                    Image("CV")
+                    Image("loginview")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: .infinity)

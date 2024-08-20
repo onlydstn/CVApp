@@ -49,10 +49,11 @@ struct EmployerView: View {
                                                                         
                                 VStack(alignment: .leading) {
                                     Text(job.jobTitle)
-                                        .font(.footnote)
+                                        .font(.subheadline)
                                         .bold()
                                     Text(job.companyName)
                                         .font(.footnote)
+                                        .padding(.bottom, 6)
                                     Text(String("\(job.startYear) - \(job.endYear)"))
                                         .font(.footnote)
                                 }

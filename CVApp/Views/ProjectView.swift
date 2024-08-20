@@ -12,8 +12,9 @@ struct ProjectView: View {
     @State private var isPulsating: Bool = false
     
     let projects: [ProjectCareer] =
-    [ProjectCareer(projectTitle: "CV App", projectDescription: "Dustin", startYear: 2024, endYear: 2024, icon: "cvicon"),
-     ProjectCareer(projectTitle: "Smart Home Simulator", projectDescription: "a simulated SmartHome app", startYear: 2024, endYear: 2024, icon: "smarthomeicon")]
+    [ProjectCareer(projectTitle: "Curriculum Vitae (CV)", projectDescription: "a modern looking UI representing my CV", githubLink: "https://github.com/onlydstn/CVApp", icon: "cvicon"),
+     ProjectCareer(projectTitle: "Smart Home Simulator", projectDescription: "a simulated SmartHome app", githubLink: "https://github.com/onlydstn/SmartHome-Simulator", icon: "smarthomeicon"),
+    ProjectCareer(projectTitle: "Login View", projectDescription: "my first Login View", githubLink: "https://github.com/onlydstn/OnboardingView", icon: "loginicon")]
     
     var body: some View {
         ZStack {
@@ -58,11 +59,12 @@ struct ProjectView: View {
                                 
                                 VStack(alignment: .leading) {
                                     Text(project.projectTitle)
-                                        .font(.footnote)
+                                        .font(.subheadline)
                                         .bold()
                                     Text(project.projectDescription)
                                         .font(.footnote)
-                                    Text(String("\(project.startYear) - today"))
+                                        .padding(.bottom, 4)
+                                    Link("GitHub Link", destination: URL(string: "\(project.githubLink)")!)
                                         .font(.footnote)
                                 }
                                 .padding(.leading, 8) // Abstand Text zu Logos
@@ -88,10 +90,12 @@ struct ProjectView: View {
     @ViewBuilder
     private func viewForProject(_ project: ProjectCareer, isPresented: Binding<Bool>) -> some View {
         switch project.projectTitle {
-        case "CV App":
+        case "Curriculum Vitae (CV)":
             CVCardView(isPresented: isPresented)
         case "Smart Home Simulator":
             SmartHomeCardView(isPresented: isPresented)
+        case "Login View":
+            LoginCardView(isPresented: isPresented)
         default:
             Text("No view available.")
         }

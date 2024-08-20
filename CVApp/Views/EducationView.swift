@@ -45,11 +45,12 @@ struct EducationView: View {
                                 
                                 VStack(alignment: .leading) {
                                     Text(education.educationTitle)
-                                        .font(.footnote)
+                                        .font(.subheadline)
                                         .bold()
                                     Text(education.companyName)
                                         .font(.footnote)
-                                    Text(String("\(education.startYear) - today"))
+                                        .padding(.bottom, 6)
+                                    Text(String("\(education.startYear) - \(education.endYear)"))
                                         .font(.footnote)
                                 }
                                 .padding(.leading, 8) // Abstand Text zu Logos

@@ -8,29 +8,21 @@
 import SwiftUI
 
 struct SmartHomeCardView: View {
-    //@Environment(\.presentationMode) var presentationMode
     @Binding var isPresented: Bool
     
     var body: some View {
-        
-        HStack {
+        VStack {
             Text("SmartHome Simulator")
-                .padding(.top, 36)
+                .padding(.top, 12)
                 .font(.title2)
                 .bold()
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 24)
+                .padding(.leading, 18)
             
-            Button(action: {
-                //presentationMode.wrappedValue.dismiss()
-                isPresented = false
-            }, label: {
-                Image(systemName: "xmark.circle")
-                    .font(.system(size: 24))
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing, 24)
-                
-            })
+            Text("a simulated SmartHome app")
+                .font(.footnote)
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 18)
         }
         
         GeometryReader { geometry in
