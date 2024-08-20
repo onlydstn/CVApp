@@ -95,9 +95,9 @@
 		3B4C63472C624DA5005EDBE2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3778DED52C68E8D50020FCFF /* EducationalCareer.swift */,
 				3B4C634D2C626230005EDBE2 /* Headers.swift */,
 				3BF7898D2C6399860071E308 /* JobCareer.swift */,
-				3778DED52C68E8D50020FCFF /* EducationalCareer.swift */,
 				37CA14A92C73825E002B2D35 /* ProjectCareer.swift */,
 				376531522C749940001F3186 /* ProjectViewModel.swift */,
 			);

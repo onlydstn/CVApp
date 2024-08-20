@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ProjectView: View {
-    //@State private var sheetShown: Bool = false
     @StateObject private var viewModel = ProjectViewModel()
-    //@State private var selectedProject: ProjectCareer?
     @State private var isPulsating: Bool = false
     
     let projects: [ProjectCareer] =
@@ -80,7 +78,7 @@ struct ProjectView: View {
         .padding(5) // Padding für die EducationView
         .sheet(isPresented: $viewModel.sheetShown) {
             if let project = viewModel.selectedProject {
-                viewForProject(project)
+                viewForProject(project, isPresented: $viewModel.sheetShown)
             } else {
                 Text("No project selected.")
             }
@@ -88,12 +86,12 @@ struct ProjectView: View {
     }
     
     @ViewBuilder
-    private func viewForProject(_ project: ProjectCareer) -> some View {
+    private func viewForProject(_ project: ProjectCareer, isPresented: Binding<Bool>) -> some View {
         switch project.projectTitle {
         case "CV App":
-            CVCardView()
+            CVCardView(isPresented: isPresented)
         case "Smart Home Simulator":
-            SmartHomeCardView()
+            SmartHomeCardView(isPresented: isPresented)
         default:
             Text("No view available.")
         }

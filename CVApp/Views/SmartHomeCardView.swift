@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SmartHomeCardView: View {
-    @Environment(\.presentationMode) var presentationMode
+    //@Environment(\.presentationMode) var presentationMode
+    @Binding var isPresented: Bool
     
     var body: some View {
         
@@ -21,7 +22,8 @@ struct SmartHomeCardView: View {
                 .padding(.leading, 24)
             
             Button(action: {
-                presentationMode.wrappedValue.dismiss()
+                //presentationMode.wrappedValue.dismiss()
+                isPresented = false
             }, label: {
                 Image(systemName: "xmark.circle")
                     .font(.system(size: 24))
@@ -46,3 +48,4 @@ struct SmartHomeCardView: View {
         }
     }
 }
+
