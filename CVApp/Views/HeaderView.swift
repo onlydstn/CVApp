@@ -7,23 +7,32 @@
 
 import SwiftUI
 
+enum ViewType {
+    case project, employer, education
+}
+
 struct MainView: View {
+    @State private var selection = 1
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             HeaderView(viewType: .employer)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+                .tag(1)
             
             HeaderView(viewType: .education)
                 .tabItem {
                     Label("Education", systemImage: "graduationcap")
                 }
+                .tag(2)
             
             HeaderView(viewType: .project)
                 .tabItem {
                     Label("Projects", systemImage: "doc")
                 }
+                .tag(3)
             
         }
     }
@@ -163,10 +172,6 @@ struct HeaderView: View {
             }
         }
     }
-}
-
-enum ViewType {
-    case project, employer, education
 }
 
 #Preview {
