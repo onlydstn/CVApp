@@ -13,6 +13,7 @@
 		376874102C733439002842C9 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3768740F2C733439002842C9 /* ProjectView.swift */; };
 		3778DED42C68DD720020FCFF /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED32C68DD720020FCFF /* EducationView.swift */; };
 		3778DED62C68E8D50020FCFF /* EducationalCareer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778DED52C68E8D50020FCFF /* EducationalCareer.swift */; };
+		379611092C94559F0052FC21 /* ReleaseRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379611082C94559F0052FC21 /* ReleaseRadarView.swift */; };
 		37CA14AA2C73825E002B2D35 /* ProjectCareer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA14A92C73825E002B2D35 /* ProjectCareer.swift */; };
 		37CA14AC2C738E8D002B2D35 /* CVCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA14AB2C738E8D002B2D35 /* CVCardView.swift */; };
 		3B4C633A2C624D7A005EDBE2 /* CVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C63392C624D7A005EDBE2 /* CVAppApp.swift */; };
@@ -33,6 +34,7 @@
 		3768740F2C733439002842C9 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		3778DED32C68DD720020FCFF /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
 		3778DED52C68E8D50020FCFF /* EducationalCareer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalCareer.swift; sourceTree = "<group>"; };
+		379611082C94559F0052FC21 /* ReleaseRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseRadarView.swift; sourceTree = "<group>"; };
 		37CA14A92C73825E002B2D35 /* ProjectCareer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCareer.swift; sourceTree = "<group>"; };
 		37CA14AB2C738E8D002B2D35 /* CVCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCardView.swift; sourceTree = "<group>"; };
 		3B4C63362C624D7A005EDBE2 /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				37CA14AB2C738E8D002B2D35 /* CVCardView.swift */,
 				376531502C7481C9001F3186 /* SmartHomeCardView.swift */,
 				376531542C74AC4A001F3186 /* LoginCardView.swift */,
+				379611082C94559F0052FC21 /* ReleaseRadarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				3B4C634C2C625F80005EDBE2 /* HeaderView.swift in Sources */,
 				3778DED42C68DD720020FCFF /* EducationView.swift in Sources */,
 				3BF7898E2C6399860071E308 /* JobCareer.swift in Sources */,
+				379611092C94559F0052FC21 /* ReleaseRadarView.swift in Sources */,
 				3778DED62C68E8D50020FCFF /* EducationalCareer.swift in Sources */,
 				37CA14AA2C73825E002B2D35 /* ProjectCareer.swift in Sources */,
 				3BF789902C63BF860071E308 /* EmployerView.swift in Sources */,

@@ -97,6 +97,8 @@ struct ProjectView: View {
             SmartHomeCardView(isPresented: isPresented)
         case "Login View":
             LoginCardView(isPresented: isPresented)
+        case "Release Radar":
+            ReleaseRadarView(isPresented: isPresented)
         default:
             Text("No view available.")
         }
