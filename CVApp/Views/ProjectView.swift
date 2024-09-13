@@ -14,7 +14,8 @@ struct ProjectView: View {
     let projects: [ProjectCareer] =
     [ProjectCareer(projectTitle: "Curriculum Vitae (CV)", projectDescription: "a modern looking UI representing my CV", githubLink: "https://github.com/onlydstn/CVApp", icon: "cvicon"),
      ProjectCareer(projectTitle: "Smart Home Simulator", projectDescription: "a simulated SmartHome app", githubLink: "https://github.com/onlydstn/SmartHome-Simulator", icon: "smarthomeicon"),
-    ProjectCareer(projectTitle: "Login View", projectDescription: "my first Login View", githubLink: "https://github.com/onlydstn/OnboardingView", icon: "loginicon")]
+    ProjectCareer(projectTitle: "Login View", projectDescription: "my first Login View", githubLink: "https://github.com/onlydstn/OnboardingView", icon: "loginicon"),
+    ProjectCareer(projectTitle: "Release Radar", projectDescription: "an app that calls the iTunes API for most played songs.", githubLink: "https://github.com/onlydstn/ReleaseRadar?tab=readme-ov-file", icon: "radar")]
     
     var body: some View {
         ZStack {
